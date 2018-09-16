@@ -1,6 +1,9 @@
 # AirbnbAnalysis
 Analyzing Airbnb data for Boston and Seattle
 
+### Motivation
+This is part of a data science project for Udacity. I wanted to challenge myself by using data for both Seattle and Boston.
+
 ### CRISP-DM
 Business Understanding:
 This data contain a lot of parameters related to Boston and Seattle Airbnb data. Airbnb is in the business of offering host locations for cutomers. Like Amazon, those hosts rely on price and review score. I am assuming that review score correlates with profitability.
@@ -35,3 +38,10 @@ finalized_model.sav: the decision tree regressor we obtained with all features
 deploy_model.sav: model with only 9 features
 
 airbnb_regressor: dot file that shows structure of decision tree regressor
+
+### Acknowledgments
+I used code that has been developed by:
+
+George Fisher: from him I used a plot for top 10 features in decision tree
+
+Michael Waskom: from him I used a heatmap to show correlation between variables
