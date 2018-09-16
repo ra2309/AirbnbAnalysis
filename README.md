@@ -1,6 +1,7 @@
 # AirbnbAnalysis
 Analyzing Airbnb data for Boston and Seattle
 
+### CRISP-DM
 Business Understanding:
 This data contain a lot of parameters related to Boston and Seattle Airbnb data. Airbnb is in the business of offering host locations for cutomers. Like Amazon, those hosts rely on price and review score. I am assuming that review score correlates with profitability.
 
@@ -14,4 +15,15 @@ Analysis:
 I created a heatmap to show the correlation of data and removed data that are strongly correlated with each other.
 
 Model:
-I used a base model which is linear regression which performed poorly. Then, I took the best 10 features using univariate select k best chi2 and used decission tree. The model score is 99%.
+I used a base model which is linear regression which performed poorly. Then, I used decision tree regressor. The model score is 99%.
+
+Deploy:
+To deploy this model quickly, we need to neglict calender list since it is huge and rely on the 9 features that we have except host diff. Our model still give 99% accuracy for Boston and Seattle but does not give good results for New York and San Franscisco indicating that each city need its own model and that we need to aggregate data.
+
+### Libraries Used
+numpy
+pandas
+sklearn
+pickle
+datetime
+
