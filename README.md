@@ -27,3 +27,11 @@ sklearn
 pickle
 datetime
 
+### Files
+Major file is a Notebook for Analyzing airbnb data for Boston and Seattle. It contains the whole process of analyzing to deploying the model.
+
+finalized_model.sav: the decision tree regressor we obtained with all features
+
+deploy_model.sav: model with only 9 features
+
+airbnb_regressor: dot file that shows structure of decision tree regressor
